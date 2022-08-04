@@ -111,14 +111,13 @@ body {
 
 .cart {
     text-align: center;
-    width: 370px;
+    max-width: 420px;
     max-height: 410px;
     border: 1px solid #E5E5E5;
 }
 
 .cart img {
-    max-width: 420px;
-    max-height: 280px;
+    width: 100%;
 }
 
 .cart__header {
@@ -143,16 +142,12 @@ body {
     font-size: 12px;
 }
 
-.pagination {
-    width: 509px;
-    margin: 0 auto;
-}
 
 /* Section */
 
 .info {
     display: flex;
-    max-width: 370px;
+    max-width: 420px;
     margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
@@ -166,7 +161,7 @@ body {
     font-size: 16px;
     border: 1px solid #E5E5E5;
     padding: 15px 0;
-    width: 270px;
+    max-width: 270px;
     text-align: center;
 }
 
@@ -177,8 +172,7 @@ body {
 }
 
 .bio__card img {
-    width: 270px;
-    height: 180px;
+    width: 100%;
 }
 
 .name {
@@ -222,14 +216,13 @@ body {
 }
 
 .small_cart {
-    max-width: 270px;
+    max-width: 420px;
     margin-top: 20px;
     border: 1px solid #E5E5E5;
 }
 
 .small_cart img {
-    width: 270px;
-    height: 180px;
+    width: 100%;
 }
 
 .small__header {
@@ -387,9 +380,6 @@ body {
 }
 
 @media (max-width: 1050px) {
-    .cart {
-        margin-left: 15%;
-    }
     .main__content {
         margin: 0 auto;
     }
@@ -414,6 +404,7 @@ body {
         gap: 100px;
     }
     .products {
-       margin-left: 15%;
+       margin: 0 auto;
+
     }
 }
