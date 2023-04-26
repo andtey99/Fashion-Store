@@ -20,7 +20,7 @@ body {
 
 .header__container {
     display: flex;
-    max-width: 1760px;
+    max-width: 1140px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -96,23 +96,23 @@ body {
 
 .content__inner {
     display: flex;
+    justify-content: space-between;
     max-width: 1140px;
     margin: 0 auto;
     margin-top: 59px;
-    padding-left: 10px;
+    padding: 0 10px;
 }
 
 .products {
+    margin: 0 auto;
     display: flex;
-    width: 770px;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .cart {
     text-align: center;
     max-width: 420px;
-    max-height: 410px;
     border: 1px solid #E5E5E5;
 }
 
@@ -150,7 +150,6 @@ body {
     max-width: 420px;
     margin: 0 auto;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center;
 }
 
@@ -161,13 +160,11 @@ body {
     font-size: 16px;
     border: 1px solid #E5E5E5;
     padding: 15px 0;
-    max-width: 270px;
     text-align: center;
 }
 
 .bio__card {
     margin-top: 20px;
-    max-width: 270px;
     border: 1px solid #E5E5E5;
 }
 
@@ -379,32 +376,29 @@ body {
     margin: 30px 0;
 }
 
-@media (max-width: 1050px) {
-    .main__content {
-        margin: 0 auto;
+@media (max-width: 1200px) {
+    .content__inner {
+        flex-direction: column;
     }
     .products {
-        max-width: 50%;
+        justify-content: center;
+        margin-bottom: 30px;
     }
-    .info {
-        max-width: 50%;
-        justify-content: flex-start;
+    .about, .featured {
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
-    .info div {
-        margin-top: 15px;
+    .categories {
+        margin-bottom: 30px;
     }
-    .info div:first-child {
-        margin-top: 0px;
+    .social__cards {
+        padding-top: 20px;
+        margin: 0 auto;
     }
 }
 
-@media (max-width: 800px) {
-    .content__inner {
+@media (max-width: 450px) {
+    .header__container {
         flex-direction: column;
-        gap: 100px;
-    }
-    .products {
-       margin: 0 auto;
-
     }
 }
